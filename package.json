@@ -1,0 +1,30 @@
+{
+  "name": "node-ncore-parser",
+  "version": "0.0.1",
+  "description": "A parser, wrapper for using ncore.pro from server side",
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "test": "jest",
+    "test:watch": "jest --watchAll"
+  },
+  "engines": {
+    "node": "^14.15.0 || ^16.10.0 || >=18.0.0"
+  },
+  "workspaces": [
+    "packages/fetcher"
+  ],
+  "keywords": [],
+  "author": "Mate Nemeth",
+  "license": "ISC",
+  "dependencies": {
+    "@node-ncore-parser/fetcher": "file:packages/fetcher",
+    "jsdom": "^20.0.1"
+  },
+  "devDependencies": {
+    "eslint": "^8.26.0",
+    "jest": "^29.2.0"
+  },
+  "types": "index.d.ts"
+}
